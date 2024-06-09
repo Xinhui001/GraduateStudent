@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.graduateinfo.mapper.GraduatesMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.graduateinfo.model.domain.Graduates">
+            <id property="graduateid" column="GraduateID" jdbcType="INTEGER"/>
+            <result property="studentName" column="studentName" jdbcType="VARCHAR"/>
+            <result property="gender" column="gender" jdbcType="VARCHAR"/>
+            <result property="birthdate" column="birthDate" jdbcType="DATE"/>
+            <result property="majorid" column="MajorID" jdbcType="INTEGER"/>
+            <result property="classid" column="ClassID" jdbcType="INTEGER"/>
+            <result property="graduationyear" column="graduationYear" jdbcType="INTEGER"/>
+            <result property="employmentstatus" column="employmentStatus" jdbcType="VARCHAR"/>
+            <result property="majorname" column="majorName" jdbcType="VARCHAR"/>
+            <result property="classname" column="className" jdbcType="VARCHAR"/>
+            <result property="isDeleted" column="isDeleted" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        GraduateID,studentName,gender,
+        birthDate,MajorID,ClassID,
+        graduationYear,employmentStatus,majorName,
+        className,isDeleted
+    </sql>
+</mapper>

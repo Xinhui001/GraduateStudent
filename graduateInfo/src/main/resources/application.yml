@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: graduateInfo
+  # DataSource Config
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: sa
+    password: jxh410306...
+    url: jdbc:sqlserver://localhost:1433;databasename=graduateStudent
+  #  session 失效时间
+  session:
+    timeout: 86400
+  # 默认 dev 环境
+  profiles:
+    active: dev
+  # 支持 swagger3
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+    # 打印SQL语句
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 全局配置
+  global-config:
+    db_config:
+      # 全局逻辑删除的字段名
+      logic-delete-field: isDeleted
+      # 逻辑已删除值
+      logic-delete-value: 1
+      # 逻辑未删除值
+      logic-not-delete-value: 0
