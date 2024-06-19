@@ -94,7 +94,30 @@ public class StudentClassesServiceImpl extends ServiceImpl<StudentClassesMapper,
             throw new BusinessException(ErrorCode.PARAMS_ERROR);
         }
         LambdaQueryWrapper<StudentClasses> queryWrapper = new LambdaQueryWrapper<>();
+        if (StringUtils.isBlank(studentClasses.getClassName()) && StringUtils.isNotBlank(studentClasses.getMajorName())) {
+            queryWrapper.like(StudentClasses::getMajorName, studentClasses.getMajorName());
+            queryWrapper.orderByAsc(StudentClasses::getClassId);
+            Page<StudentClasses> page = new Page<>(pagedNum, pageSize);
+            List<StudentClasses> studentClassesIPage = this.list(page,queryWrapper);
 
+            if (studentClassesIPage == null) {
+                throw new BusinessException(ErrorCode.PARAMS_ERROR);
+            }
+
+            return PageInfo.of(studentClassesIPage);
+        }
+        if (StringUtils.isBlank(studentClasses.getMajorName()) && StringUtils.isNotBlank(studentClasses.getClassName())) {
+            queryWrapper.like(StudentClasses::getClassName, studentClasses.getClassName());
+            queryWrapper.orderByAsc(StudentClasses::getClassId);
+            Page<StudentClasses> page = new Page<>(pagedNum, pageSize);
+            List<StudentClasses> studentClassesIPage = this.list(page,queryWrapper);
+
+            if (studentClassesIPage == null) {
+                throw new BusinessException(ErrorCode.PARAMS_ERROR);
+            }
+
+            return PageInfo.of(studentClassesIPage);
+        }
         queryWrapper.like(StudentClasses::getClassName, studentClasses.getClassName())
                 .or()
                 .like(StudentClasses::getMajorName, studentClasses.getMajorName());

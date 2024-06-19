@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build": "vite build && electron-builder",
+    "build:win": "vite build && electron-builder --win"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.1.0",
@@ -18,6 +19,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.4.0",
+    "electron-packager": "^17.1.2",
     "unplugin-auto-import": "^0.16.7",
     "unplugin-vue-components": "^0.25.2",
     "vite": "^4.4.11"

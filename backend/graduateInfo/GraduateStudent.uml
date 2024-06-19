@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>D:/桌面/FrankProject/GraduateStudent/backend/graduateInfo/src</OriginalElement>
+  <nodes>
+    <node x="1090.7282157676354" y="787.5">com.example.graduateinfo.service.StudentClassesService</node>
+    <node x="802.4574688796679" y="1317.5">com.example.graduateinfo.service.impl.StudentClassesServiceImpl</node>
+    <node x="4070.874913554634" y="34.0">com.example.graduateinfo.model.domain.User</node>
+    <node x="2308.5" y="740.5">com.example.graduateinfo.exception.BusinessException</node>
+    <node x="2568.582468879668" y="1329.0">com.example.graduateinfo.exception.GlobalExceptionHandle</node>
+    <node x="1159.0" y="1521.0">com.example.graduateinfo.SampleTest</node>
+    <node x="-316.0" y="1521.0">com.example.graduateinfo.config.SwaggerConfig</node>
+    <node x="1861.4574688796679" y="1317.5">com.example.graduateinfo.controller.StudentClassesController</node>
+    <node x="-299.5" y="787.5">com.example.graduateinfo.service.MajorsService</node>
+    <node x="675.2282157676354" y="149.0">com.example.graduateinfo.model.request.StudentClassesUpdateRequest</node>
+    <node x="1346.0" y="1521.0">com.example.graduateinfo.constant.UserConstant</node>
+    <node x="4506.5" y="753.0">com.example.graduateinfo.service.UserService</node>
+    <node x="3959.125" y="1283.0">com.example.graduateinfo.service.impl.UserServiceImpl</node>
+    <node x="5006.291926002767" y="-35.0">com.example.graduateinfo.model.domain.Graduates</node>
+    <node x="4067.5" y="694.0">com.example.graduateinfo.model.request.UserRegisterRequest</node>
+    <node x="6107.374913554634" y="80.0">com.example.graduateinfo.model.request.GraduateSearchRequest</node>
+    <node x="5463.374913554634" y="787.5">com.example.graduateinfo.service.GraduatesService</node>
+    <node x="4343.457468879667" y="1306.0">com.example.graduateinfo.controller.GraduatesController</node>
+    <node x="2.790456431534949" y="172.0">com.example.graduateinfo.model.domain.Majors</node>
+    <node x="2122.1448824343024" y="126.0">com.example.graduateinfo.model.domain.StudentClasses</node>
+    <node x="5813.207382434302" y="34.0">com.example.graduateinfo.model.request.GraduateUpdateRequest</node>
+    <node x="274.0" y="1521.0">com.example.graduateinfo.config.CorsConfig</node>
+    <node x="1840.7074688796679" y="823.5">com.example.graduateinfo.mapper.StudentClassesMapper</node>
+    <node x="3911.5" y="823.5">com.example.graduateinfo.mapper.UserMapper</node>
+    <node x="959.2282157676354" y="172.0">com.example.graduateinfo.model.request.StudentClassesAddRequest</node>
+    <node x="1370.4574688796679" y="1317.5">com.example.graduateinfo.controller.MajorsController</node>
+    <node x="3578.5" y="752.5">com.example.graduateinfo.common.ResultUtils</node>
+    <node x="5346.457382434302" y="57.0">com.example.graduateinfo.model.request.GraduateAddRequest</node>
+    <node x="3548.0" y="91.5">com.example.graduateinfo.common.BaseResponse</node>
+    <node x="890.0" y="1521.0">com.example.graduateinfo.GraduateInfoApplication</node>
+    <node x="3556.874913554634" y="-328.0">com.example.graduateinfo.common.ErrorCode</node>
+    <node x="4287.5" y="717.0">com.example.graduateinfo.model.request.UserLoginRequest</node>
+    <node x="274.8948824343024" y="823.5">com.example.graduateinfo.mapper.MajorsMapper</node>
+    <node x="5662.519968879667" y="1317.5">com.example.graduateinfo.service.impl.GraduatesServiceImpl</node>
+    <node x="-100.0" y="1521.0">com.example.graduateinfo.config.MybatisPlusConfig</node>
+    <node x="585.0" y="1521.0">com.example.graduateinfo.GraduateInfoApplicationTests</node>
+    <node x="-188.41753112033211" y="1317.5">com.example.graduateinfo.service.impl.MajorsServiceImpl</node>
+    <node x="3474.125" y="1317.5">com.example.graduateinfo.controller.UsersController</node>
+    <node x="4876.5" y="823.5">com.example.graduateinfo.mapper.GraduatesMapper</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.graduateinfo.common.ResultUtils" target="com.example.graduateinfo.common.BaseResponse" relationship="CREATE">
+      <point x="-59.5" y="-85.0" />
+      <point x="-0.0" y="201.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.StudentClassesController" target="com.example.graduateinfo.service.StudentClassesService" relationship="TO_ONE">
+      <point x="44.999531120331994" y="-62.0" />
+      <point x="2221.957" y="806.0" />
+      <point x="274.0" y="-31.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.UserServiceImpl" target="com.example.graduateinfo.model.domain.User" relationship="CREATE">
+      <point x="169.0" y="91.0" />
+      <point x="6373.874913554634" y="1470.5" />
+      <point x="6373.874913554634" y="-124.5" />
+      <point x="4170.374913554634" y="-124.5" />
+      <point x="-0.0" y="-258.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.StudentClassesController" target="com.example.graduateinfo.model.domain.StudentClasses" relationship="DEPENDENCY">
+      <point x="-4.688796680056839E-4" y="62.0" />
+      <point x="2176.957" y="1639.5" />
+      <point x="6181.02" y="1639.5" />
+      <point x="6181.02" y="1172.0" />
+      <point x="2086.0" y="1172.0" />
+      <point x="2086.0" y="292.5" />
+      <point x="-99.49988243430244" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.MajorsServiceImpl" target="com.example.graduateinfo.exception.BusinessException" relationship="CREATE">
+      <point x="14.999531120332115" y="-62.0" />
+      <point x="12.582" y="1267.0" />
+      <point x="2456.0" y="1267.0" />
+      <point x="15.0" y="97.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.GraduatesController" target="com.example.graduateinfo.model.domain.Graduates" relationship="DEPENDENCY">
+      <point x="292.4995311203329" y="-15.0" />
+      <point x="5095.0" y="1364.5" />
+      <point x="5095.0" y="770.0" />
+      <point x="5114.5" y="770.0" />
+      <point x="8.708073997233441" y="327.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.GraduatesServiceImpl" target="com.example.graduateinfo.model.request.GraduateAddRequest" relationship="DEPENDENCY">
+      <point x="-250.499968879667" y="-0.0" />
+      <point x="5389.0" y="1379.5" />
+      <point x="5389.0" y="597.5" />
+      <point x="5445.875" y="597.5" />
+      <point x="-1.082382434302417" y="235.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.StudentClassesService" target="com.example.graduateinfo.model.domain.StudentClasses" relationship="DEPENDENCY">
+      <point x="-2.1576763538178056E-4" y="50.0" />
+      <point x="1364.728" y="1172.0" />
+      <point x="2086.0" y="1172.0" />
+      <point x="2086.0" y="292.5" />
+      <point x="-99.49988243430244" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.MajorsController" target="com.example.graduateinfo.exception.BusinessException" relationship="CREATE">
+      <point x="14.999531120332222" y="-62.0" />
+      <point x="1620.957" y="1267.0" />
+      <point x="2456.0" y="1267.0" />
+      <point x="15.0" y="97.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.GraduatesServiceImpl" target="com.example.graduateinfo.exception.BusinessException" relationship="CREATE">
+      <point x="-14.999968879666994" y="-62.0" />
+      <point x="5898.02" y="1267.0" />
+      <point x="2456.0" y="1267.0" />
+      <point x="15.0" y="97.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.GraduatesService" target="com.example.graduateinfo.model.request.GraduateSearchRequest" relationship="DEPENDENCY">
+      <point x="8.644536592328222E-5" y="50.0" />
+      <point x="5713.875" y="1286.0" />
+      <point x="6216.875" y="1286.0" />
+      <point x="8.644536592328222E-5" y="212.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.GraduatesController" target="com.example.graduateinfo.model.request.GraduateSearchRequest" relationship="DEPENDENCY">
+      <point x="-30.000468879667096" y="-73.5" />
+      <point x="4605.957" y="1286.0" />
+      <point x="6216.875" y="1286.0" />
+      <point x="8.644536592328222E-5" y="212.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.StudentClassesController" target="com.example.graduateinfo.model.request.StudentClassesAddRequest" relationship="DEPENDENCY">
+      <point x="-30.000468879668006" y="-62.0" />
+      <point x="2146.957" y="1199.0" />
+      <point x="1053.0" y="1199.0" />
+      <point x="1053.0" y="451.5" />
+      <point x="1073.228" y="451.5" />
+      <point x="-7.000215767635382" y="120.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.MajorsServiceImpl" target="com.example.graduateinfo.model.domain.Majors" relationship="DEPENDENCY">
+      <point x="-15.000468879667885" y="-62.0" />
+      <point x="-17.418" y="905.0" />
+      <point x="143.0" y="905.0" />
+      <point x="143.0" y="770.0" />
+      <point x="102.29" y="770.0" />
+      <point x="-4.5643153494268063E-4" y="120.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.common.BaseResponse" target="com.example.graduateinfo.common.ErrorCode" relationship="DEPENDENCY">
+      <point x="-127.0" y="-0.0" />
+      <point x="3496.0" y="292.5" />
+      <point x="3496.0" y="-207.5" />
+      <point x="-108.99991355463408" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.GraduatesController" target="com.example.graduateinfo.common.ErrorCode" relationship="DEPENDENCY">
+      <point x="-4.688796670961892E-4" y="-73.5" />
+      <point x="4635.957" y="1252.0" />
+      <point x="3496.0" y="1252.0" />
+      <point x="3496.0" y="-207.5" />
+      <point x="-108.99991355463408" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.GraduatesServiceImpl" target="com.example.graduateinfo.model.domain.StudentClasses" relationship="DEPENDENCY">
+      <point x="77.625031120333" y="-62.0" />
+      <point x="5990.645" y="1172.0" />
+      <point x="2086.0" y="1172.0" />
+      <point x="2086.0" y="292.5" />
+      <point x="-99.49988243430244" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.GraduatesController" target="com.example.graduateinfo.common.BaseResponse" relationship="DEPENDENCY">
+      <point x="29.999531120332904" y="-73.5" />
+      <point x="4665.957" y="1227.0" />
+      <point x="4055.0" y="1227.0" />
+      <point x="4055.0" y="292.5" />
+      <point x="127.0" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.UsersController" target="com.example.graduateinfo.model.domain.User" relationship="DEPENDENCY">
+      <point x="-225.625" y="-62.0" />
+      <point x="3481.0" y="622.0" />
+      <point x="4170.375" y="622.0" />
+      <point x="8.644536592328222E-5" y="258.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.MajorsServiceImpl" target="com.example.graduateinfo.service.MajorsService" relationship="REALIZATION">
+      <point x="-46.5" y="-62.0" />
+      <point x="-48.917531120332114" y="1252.0" />
+      <point x="-206.5" y="1252.0" />
+      <point x="-93.0" y="50.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.GraduatesServiceImpl" target="com.example.graduateinfo.model.request.GraduateUpdateRequest" relationship="DEPENDENCY">
+      <point x="92.625031120333" y="-62.0" />
+      <point x="6005.645" y="1192.0" />
+      <point x="6028.0" y="1192.0" />
+      <point x="6028.0" y="612.5" />
+      <point x="5924.707" y="612.5" />
+      <point x="-3.824343020824017E-4" y="258.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.exception.GlobalExceptionHandle" target="com.example.graduateinfo.common.ResultUtils" relationship="DEPENDENCY">
+      <point x="14.999531120331994" y="-50.5" />
+      <point x="2780.082" y="1292.0" />
+      <point x="2642.0" y="1292.0" />
+      <point x="2642.0" y="1202.0" />
+      <point x="3734.5" y="1202.0" />
+      <point x="-0.0" y="85.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.UsersController" target="com.example.graduateinfo.common.ResultUtils" relationship="DEPENDENCY">
+      <point x="-15.0" y="-62.0" />
+      <point x="3691.625" y="1292.0" />
+      <point x="2642.0" y="1292.0" />
+      <point x="2642.0" y="1202.0" />
+      <point x="3734.5" y="1202.0" />
+      <point x="-0.0" y="85.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.GraduatesController" target="com.example.graduateinfo.model.request.GraduateAddRequest" relationship="DEPENDENCY">
+      <point x="292.4995311203329" y="15.0" />
+      <point x="5389.0" y="1394.5" />
+      <point x="5389.0" y="597.5" />
+      <point x="5445.875" y="597.5" />
+      <point x="-1.082382434302417" y="235.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.StudentClassesServiceImpl" target="com.example.graduateinfo.model.request.StudentClassesUpdateRequest" relationship="DEPENDENCY">
+      <point x="-38.457468879667886" y="-62.0" />
+      <point x="1038.0" y="865.0" />
+      <point x="996.0" y="865.0" />
+      <point x="996.0" y="740.0" />
+      <point x="809.957" y="740.0" />
+      <point x="2.7287842323645464" y="143.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.GraduatesService" target="com.example.graduateinfo.model.request.GraduateUpdateRequest" relationship="DEPENDENCY">
+      <point x="250.50008644536592" y="-0.0" />
+      <point x="6028.0" y="837.5" />
+      <point x="6028.0" y="612.5" />
+      <point x="5924.707" y="612.5" />
+      <point x="-3.824343020824017E-4" y="258.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.StudentClassesServiceImpl" target="com.example.graduateinfo.mapper.StudentClassesMapper" relationship="TO_ONE">
+      <point x="174.04253112033211" y="-62.0" />
+      <point x="1250.5" y="1127.0" />
+      <point x="1945.707" y="1127.0" />
+      <point x="-4.6887966777831025E-4" y="14.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.mapper.GraduatesMapper" target="com.example.graduateinfo.model.domain.Graduates" relationship="DEPENDENCY">
+      <point x="88.0" y="-0.0" />
+      <point x="5095.0" y="837.5" />
+      <point x="5095.0" y="770.0" />
+      <point x="5114.5" y="770.0" />
+      <point x="8.708073997233441" y="327.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.GraduatesController" target="com.example.graduateinfo.common.ResultUtils" relationship="DEPENDENCY">
+      <point x="-15.000468879667096" y="-73.5" />
+      <point x="4620.957" y="1202.0" />
+      <point x="3734.5" y="1202.0" />
+      <point x="-0.0" y="85.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.StudentClassesServiceImpl" target="com.example.graduateinfo.mapper.MajorsMapper" relationship="TO_ONE">
+      <point x="-274.0004688796679" y="-0.0" />
+      <point x="615.0" y="1379.5" />
+      <point x="615.0" y="837.5" />
+      <point x="76.50011756569756" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.UsersController" target="com.example.graduateinfo.common.ErrorCode" relationship="DEPENDENCY">
+      <point x="-0.0" y="-62.0" />
+      <point x="3706.625" y="1252.0" />
+      <point x="3496.0" y="1252.0" />
+      <point x="3496.0" y="-207.5" />
+      <point x="-108.99991355463408" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.GraduatesController" target="com.example.graduateinfo.model.request.GraduateUpdateRequest" relationship="DEPENDENCY">
+      <point x="292.4995311203329" y="-0.0" />
+      <point x="5137.792" y="1379.5" />
+      <point x="5137.792" y="770.0" />
+      <point x="6028.0" y="770.0" />
+      <point x="6028.0" y="612.5" />
+      <point x="5924.707" y="612.5" />
+      <point x="-3.824343020824017E-4" y="258.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.UsersController" target="com.example.graduateinfo.common.BaseResponse" relationship="DEPENDENCY">
+      <point x="30.0" y="-62.0" />
+      <point x="3736.625" y="1227.0" />
+      <point x="4055.0" y="1227.0" />
+      <point x="4055.0" y="292.5" />
+      <point x="127.0" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.UsersController" target="com.example.graduateinfo.exception.BusinessException" relationship="CREATE">
+      <point x="15.0" y="-62.0" />
+      <point x="3721.625" y="1267.0" />
+      <point x="2456.0" y="1267.0" />
+      <point x="15.0" y="97.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.StudentClassesController" target="com.example.graduateinfo.model.request.StudentClassesUpdateRequest" relationship="DEPENDENCY">
+      <point x="-15.000468879668006" y="62.0" />
+      <point x="2161.957" y="1654.5" />
+      <point x="-333.5" y="1654.5" />
+      <point x="-333.5" y="755.0" />
+      <point x="996.0" y="755.0" />
+      <point x="996.0" y="740.0" />
+      <point x="809.957" y="740.0" />
+      <point x="2.7287842323645464" y="143.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.MajorsController" target="com.example.graduateinfo.common.BaseResponse" relationship="DEPENDENCY">
+      <point x="-30.00046887966778" y="-62.0" />
+      <point x="1575.957" y="1227.0" />
+      <point x="4055.0" y="1227.0" />
+      <point x="4055.0" y="292.5" />
+      <point x="127.0" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.MajorsController" target="com.example.graduateinfo.common.ErrorCode" relationship="DEPENDENCY">
+      <point x="-4.6887966777831025E-4" y="-62.0" />
+      <point x="1605.957" y="1252.0" />
+      <point x="3496.0" y="1252.0" />
+      <point x="3496.0" y="-207.5" />
+      <point x="-108.99991355463408" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.GraduatesServiceImpl" target="com.example.graduateinfo.common.ErrorCode" relationship="DEPENDENCY">
+      <point x="3.112033300567418E-5" y="-62.0" />
+      <point x="5913.02" y="1252.0" />
+      <point x="3496.0" y="1252.0" />
+      <point x="3496.0" y="-207.5" />
+      <point x="-108.99991355463408" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.exception.BusinessException" target="com.example.graduateinfo.common.ErrorCode" relationship="DEPENDENCY">
+      <point x="-0.0" y="97.0" />
+      <point x="2441.0" y="1252.0" />
+      <point x="3496.0" y="1252.0" />
+      <point x="3496.0" y="-207.5" />
+      <point x="-108.99991355463408" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.UsersController" target="com.example.graduateinfo.service.UserService" relationship="TO_ONE">
+      <point x="45.0" y="-62.0" />
+      <point x="3751.625" y="1066.0" />
+      <point x="4675.5" y="1066.0" />
+      <point x="-0.0" y="84.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.MajorsServiceImpl" target="com.example.graduateinfo.common.ErrorCode" relationship="DEPENDENCY">
+      <point x="-4.6887966788577984E-4" y="-62.0" />
+      <point x="-2.418" y="1252.0" />
+      <point x="3496.0" y="1252.0" />
+      <point x="3496.0" y="-207.5" />
+      <point x="-108.99991355463408" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.GraduatesServiceImpl" target="com.example.graduateinfo.model.request.GraduateSearchRequest" relationship="DEPENDENCY">
+      <point x="15.000031120333006" y="-62.0" />
+      <point x="5928.02" y="1286.0" />
+      <point x="6216.875" y="1286.0" />
+      <point x="8.644536592328222E-5" y="212.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.UsersController" target="com.example.graduateinfo.model.request.UserLoginRequest" relationship="DEPENDENCY">
+      <point x="-0.0" y="62.0" />
+      <point x="3706.625" y="1528.5" />
+      <point x="6388.874913554634" y="1528.5" />
+      <point x="6388.874913554634" y="-109.5" />
+      <point x="4387.0" y="-109.5" />
+      <point x="-0.0" y="-120.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.UsersController" target="com.example.graduateinfo.model.request.UserRegisterRequest" relationship="DEPENDENCY">
+      <point x="212.375" y="-62.0" />
+      <point x="3919.0" y="869.0" />
+      <point x="-99.5" y="31.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.UserServiceImpl" target="com.example.graduateinfo.common.ErrorCode" relationship="DEPENDENCY">
+      <point x="-0.0" y="-96.5" />
+      <point x="4128.125" y="1252.0" />
+      <point x="3496.0" y="1252.0" />
+      <point x="3496.0" y="-207.5" />
+      <point x="-108.99991355463408" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.GraduatesController" target="com.example.graduateinfo.exception.BusinessException" relationship="CREATE">
+      <point x="14.999531120332904" y="-73.5" />
+      <point x="4650.957" y="1267.0" />
+      <point x="2456.0" y="1267.0" />
+      <point x="15.0" y="97.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.exception.GlobalExceptionHandle" target="com.example.graduateinfo.common.ErrorCode" relationship="DEPENDENCY">
+      <point x="-4.688796680056839E-4" y="-50.5" />
+      <point x="2765.082" y="1252.0" />
+      <point x="3496.0" y="1252.0" />
+      <point x="3496.0" y="-207.5" />
+      <point x="-108.99991355463408" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.MajorsController" target="com.example.graduateinfo.common.ResultUtils" relationship="DEPENDENCY">
+      <point x="-15.000468879667778" y="-62.0" />
+      <point x="1590.957" y="1292.0" />
+      <point x="2642.0" y="1292.0" />
+      <point x="2642.0" y="1202.0" />
+      <point x="3734.5" y="1202.0" />
+      <point x="-0.0" y="85.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.mapper.UserMapper" target="com.example.graduateinfo.model.domain.User" relationship="DEPENDENCY">
+      <point x="-0.0" y="-14.0" />
+      <point x="3979.5" y="622.0" />
+      <point x="4170.375" y="622.0" />
+      <point x="8.644536592328222E-5" y="258.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.exception.GlobalExceptionHandle" target="com.example.graduateinfo.common.BaseResponse" relationship="DEPENDENCY">
+      <point x="-15.000468879668006" y="-50.5" />
+      <point x="2750.082" y="1227.0" />
+      <point x="4055.0" y="1227.0" />
+      <point x="4055.0" y="292.5" />
+      <point x="127.0" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.MajorsController" target="com.example.graduateinfo.service.MajorsService" relationship="TO_ONE">
+      <point x="-15.0" y="62.0" />
+      <point x="1590.9574688796679" y="1495.5" />
+      <point x="-221.5" y="1495.5" />
+      <point x="-108.0" y="50.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.StudentClassesServiceImpl" target="com.example.graduateinfo.service.StudentClassesService" relationship="REALIZATION">
+      <point x="68.5" y="-62.0" />
+      <point x="1144.9574688796679" y="1132.0" />
+      <point x="1227.7282157676354" y="1132.0" />
+      <point x="-137.0" y="50.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.MajorsServiceImpl" target="com.example.graduateinfo.mapper.MajorsMapper" relationship="TO_ONE">
+      <point x="185.9995311203321" y="-0.0" />
+      <point x="615.0" y="1379.5" />
+      <point x="615.0" y="837.5" />
+      <point x="76.50011756569756" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.GraduatesController" target="com.example.graduateinfo.service.GraduatesService" relationship="TO_ONE">
+      <point x="292.5" y="30.0" />
+      <point x="5645.019968879667" y="1409.5" />
+      <point x="-68.85494467496665" y="50.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.StudentClassesServiceImpl" target="com.example.graduateinfo.exception.BusinessException" relationship="CREATE">
+      <point x="14.999531120332222" y="-62.0" />
+      <point x="1091.457" y="1267.0" />
+      <point x="2456.0" y="1267.0" />
+      <point x="15.0" y="97.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.mapper.MajorsMapper" target="com.example.graduateinfo.model.domain.Majors" relationship="DEPENDENCY">
+      <point x="-76.49988243430244" y="-0.0" />
+      <point x="143.0" y="837.5" />
+      <point x="143.0" y="770.0" />
+      <point x="102.29" y="770.0" />
+      <point x="-4.5643153494268063E-4" y="120.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.GraduatesService" target="com.example.graduateinfo.model.request.GraduateAddRequest" relationship="DEPENDENCY">
+      <point x="-250.49991355463408" y="-0.0" />
+      <point x="5389.0" y="837.5" />
+      <point x="5389.0" y="597.5" />
+      <point x="5445.875" y="597.5" />
+      <point x="-1.082382434302417" y="235.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.StudentClassesService" target="com.example.graduateinfo.model.request.StudentClassesUpdateRequest" relationship="DEPENDENCY">
+      <point x="-274.0002157676354" y="27.5" />
+      <point x="996.0" y="865.0" />
+      <point x="996.0" y="740.0" />
+      <point x="809.957" y="740.0" />
+      <point x="2.7287842323645464" y="143.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.GraduatesServiceImpl" target="com.example.graduateinfo.service.GraduatesService" relationship="REALIZATION">
+      <point x="62.625" y="-62.0" />
+      <point x="5975.644968879667" y="1192.0" />
+      <point x="5839.124913554634" y="1192.0" />
+      <point x="125.25" y="50.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.StudentClassesServiceImpl" target="com.example.graduateinfo.model.request.StudentClassesAddRequest" relationship="DEPENDENCY">
+      <point x="29.99953112033222" y="-62.0" />
+      <point x="1106.457" y="1199.0" />
+      <point x="1053.0" y="1199.0" />
+      <point x="1053.0" y="451.5" />
+      <point x="1073.228" y="451.5" />
+      <point x="-7.000215767635382" y="120.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.StudentClassesController" target="com.example.graduateinfo.common.ResultUtils" relationship="DEPENDENCY">
+      <point x="-15.000468879668006" y="-62.0" />
+      <point x="2161.957" y="1292.0" />
+      <point x="2642.0" y="1292.0" />
+      <point x="2642.0" y="1202.0" />
+      <point x="3734.5" y="1202.0" />
+      <point x="-0.0" y="85.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.MajorsController" target="com.example.graduateinfo.model.domain.Majors" relationship="CREATE">
+      <point x="-0.0" y="62.0" />
+      <point x="1605.9574688796679" y="1669.5" />
+      <point x="-348.5" y="1669.5" />
+      <point x="-348.5" y="292.5" />
+      <point x="-99.5" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.exception.GlobalExceptionHandle" target="com.example.graduateinfo.exception.BusinessException" relationship="DEPENDENCY">
+      <point x="-0.0" y="50.5" />
+      <point x="2765.082468879668" y="1684.5" />
+      <point x="-363.5" y="1684.5" />
+      <point x="-363.5" y="-222.5" />
+      <point x="2441.0" y="-222.5" />
+      <point x="-0.0" y="-97.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.StudentClassesService" target="com.example.graduateinfo.model.request.StudentClassesAddRequest" relationship="DEPENDENCY">
+      <point x="-274.0002157676354" y="-0.0" />
+      <point x="1053.0" y="837.5" />
+      <point x="1053.0" y="451.5" />
+      <point x="1073.228" y="451.5" />
+      <point x="-7.000215767635382" y="120.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.GraduatesServiceImpl" target="com.example.graduateinfo.mapper.GraduatesMapper" relationship="TO_ONE">
+      <point x="250.5" y="-0.0" />
+      <point x="6343.874913554634" y="1379.5" />
+      <point x="6343.874913554634" y="-94.5" />
+      <point x="4964.5" y="-94.5" />
+      <point x="-0.0" y="-14.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.StudentClassesServiceImpl" target="com.example.graduateinfo.common.ErrorCode" relationship="DEPENDENCY">
+      <point x="-4.6887966777831025E-4" y="-62.0" />
+      <point x="1076.457" y="1252.0" />
+      <point x="3496.0" y="1252.0" />
+      <point x="3496.0" y="-207.5" />
+      <point x="-108.99991355463408" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.UserService" target="com.example.graduateinfo.model.domain.User" relationship="DEPENDENCY">
+      <point x="-0.0" y="-84.5" />
+      <point x="4675.5" y="622.0" />
+      <point x="4170.375" y="622.0" />
+      <point x="8.644536592328222E-5" y="258.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.GraduatesController" target="com.example.graduateinfo.service.UserService" relationship="TO_ONE">
+      <point x="44.999531120332904" y="-73.5" />
+      <point x="4680.957" y="1066.0" />
+      <point x="4675.5" y="1066.0" />
+      <point x="-0.0" y="84.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.StudentClassesServiceImpl" target="com.example.graduateinfo.model.domain.Majors" relationship="DEPENDENCY">
+      <point x="-15.000468879667778" y="-62.0" />
+      <point x="1061.457" y="1292.0" />
+      <point x="143.0" y="1292.0" />
+      <point x="143.0" y="770.0" />
+      <point x="102.29" y="770.0" />
+      <point x="-4.5643153494268063E-4" y="120.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.MajorsService" target="com.example.graduateinfo.model.domain.Majors" relationship="DEPENDENCY">
+      <point x="186.0" y="-0.0" />
+      <point x="143.0" y="837.5" />
+      <point x="143.0" y="770.0" />
+      <point x="102.29" y="770.0" />
+      <point x="-4.5643153494268063E-4" y="120.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.StudentClassesController" target="com.example.graduateinfo.exception.BusinessException" relationship="CREATE">
+      <point x="14.999531120331994" y="-62.0" />
+      <point x="2191.957" y="1267.0" />
+      <point x="2456.0" y="1267.0" />
+      <point x="15.0" y="97.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.StudentClassesController" target="com.example.graduateinfo.common.BaseResponse" relationship="DEPENDENCY">
+      <point x="29.999531120331994" y="-62.0" />
+      <point x="2206.957" y="1227.0" />
+      <point x="4055.0" y="1227.0" />
+      <point x="4055.0" y="292.5" />
+      <point x="127.0" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.GraduatesServiceImpl" target="com.example.graduateinfo.model.domain.Graduates" relationship="CREATE">
+      <point x="144.98003112033257" y="-62.0" />
+      <point x="6058.0" y="16.5" />
+      <point x="99.5" y="-276.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.UserServiceImpl" target="com.example.graduateinfo.mapper.UserMapper" relationship="TO_ONE">
+      <point x="-148.625" y="-96.5" />
+      <point x="-0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.common.ResultUtils" target="com.example.graduateinfo.common.ErrorCode" relationship="DEPENDENCY">
+      <point x="-156.0" y="-0.0" />
+      <point x="3496.0" y="837.5" />
+      <point x="3496.0" y="-207.5" />
+      <point x="-108.99991355463408" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.controller.StudentClassesController" target="com.example.graduateinfo.common.ErrorCode" relationship="DEPENDENCY">
+      <point x="-4.688796680056839E-4" y="-62.0" />
+      <point x="2176.957" y="1252.0" />
+      <point x="3496.0" y="1252.0" />
+      <point x="3496.0" y="-207.5" />
+      <point x="-108.99991355463408" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.mapper.StudentClassesMapper" target="com.example.graduateinfo.model.domain.StudentClasses" relationship="DEPENDENCY">
+      <point x="104.999531120332" y="-0.0" />
+      <point x="2086.0" y="837.5" />
+      <point x="2086.0" y="292.5" />
+      <point x="-99.49988243430244" y="-0.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.UserServiceImpl" target="com.example.graduateinfo.exception.BusinessException" relationship="CREATE">
+      <point x="15.0" y="-96.5" />
+      <point x="4143.125" y="1267.0" />
+      <point x="2456.0" y="1267.0" />
+      <point x="15.0" y="97.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.GraduatesService" target="com.example.graduateinfo.model.domain.Graduates" relationship="DEPENDENCY">
+      <point x="-250.49991355463408" y="15.0" />
+      <point x="5095.0" y="852.5" />
+      <point x="5095.0" y="770.0" />
+      <point x="5114.5" y="770.0" />
+      <point x="8.708073997233441" y="327.5" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.StudentClassesServiceImpl" target="com.example.graduateinfo.model.domain.StudentClasses" relationship="CREATE">
+      <point x="-274.0" y="-15.0" />
+      <point x="657.7282157676354" y="1364.5" />
+      <point x="657.7282157676354" y="131.5" />
+      <point x="-99.5" y="-161.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.GraduatesServiceImpl" target="com.example.graduateinfo.mapper.StudentClassesMapper" relationship="TO_ONE">
+      <point x="129.98003112033257" y="-62.0" />
+      <point x="6043.0" y="1127.0" />
+      <point x="1945.707" y="1127.0" />
+      <point x="-4.6887966777831025E-4" y="14.0" />
+    </edge>
+    <edge source="com.example.graduateinfo.service.impl.UserServiceImpl" target="com.example.graduateinfo.service.UserService" relationship="REALIZATION">
+      <point x="42.25" y="-96.5" />
+      <point x="4170.375" y="1152.0" />
+      <point x="4591.0" y="1152.0" />
+      <point x="-84.5" y="84.5" />
+    </edge>
+  </edges>
+  <settings layout="分层" zoom="0.3106557377049183" showDependencies="true" x="1770.2137203166217" y="235.9999999999991" />
+  <SelectedNodes />
+  <Categories>
+    <Category>内部类</Category>
+    <Category>字段</Category>
+    <Category>属性</Category>
+    <Category>方法</Category>
+    <Category>构造函数</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

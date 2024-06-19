@@ -26,7 +26,7 @@
           <el-table-column label="操作">
             <template #default="scope">
               <el-button type="primary" @click="handleEdit(scope.row)" size="small" plain>编辑</el-button>
-              <el-button type="danger" size="small" @click="del(scope.row.id)" plain>删除</el-button>
+              <el-button type="danger" size="small" @click="del(scope.row.graduateId)" plain>删除</el-button>
 
             </template>
           </el-table-column>
@@ -165,10 +165,17 @@ const handleEdit = (row) => {
   data.formVisible = true
 }
 
-const del = () =>{
+const del = (graduateId) =>{
+  if (!graduateId) {
+    ElMessage.error("删除操作需要有效的数据ID");
+    console.log(graduateId)
+    return;
+  }
+  console.log(graduateId)
   ElMessageBox.confirm('删除数据后无法恢复，您确认删除吗？','删除确认',{type:'warning'}).then(res => {
     request.post(baseUrl+'/delete',{
-      data: data.graduateId
+
+      graduateId: graduateId
     }).then(res => {
       if(res.code === 0){
         load()

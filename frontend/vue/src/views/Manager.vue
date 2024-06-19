@@ -64,6 +64,10 @@
             <el-icon><SwitchButton /></el-icon>
             <span>退出系统</span>
           </el-menu-item>
+          <el-menu-item index="login" @click="logout">
+            <el-icon><SwitchButton /></el-icon>
+            <span>登录</span>
+          </el-menu-item>
         </el-menu>
       </div>
 
@@ -77,10 +81,15 @@
 
 <script setup>
 import { useRoute } from 'vue-router'
+import request from "@/utils/request";
+
 const $route = useRoute()
 const user =JSON.parse(localStorage.getItem('teacher-user') ||'{}')
 
+const baseUrl = '/user'
+
 const logout = () => {
+  request.post(baseUrl + '/logout')
   localStorage.removeItem('teacher-user')
 }
 </script>
